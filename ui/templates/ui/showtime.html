@@ -1,0 +1,24 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'ui/style.css' %}" />
+
+<div id="header">
+  <span>Cinema on {{ hostname }}</span>
+</div>
+<div id="menu">
+  <a href="/movies">Movies</a>
+  <a href="/showtimes">Showtimes</a>
+  <a href="/admin">Admin</a>
+</div>
+
+<div class="content">
+	<span class="heading">Showtime</span>
+  <div class="section showtime-section">
+		<span class="title">{{ showtime.date }}</span>
+		<span class="section-content">Movie:
+		{% for movie in showtime.movies %}
+				<a class="list-link" href="/movie/{{ movie.id }}">{{ movie.title}} - {{movie.rating}}</a>
+		{% endfor %}
+	</div>
+
+</div>

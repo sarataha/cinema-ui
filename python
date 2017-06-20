@@ -1,0 +1,1 @@
+-c import redis;r=redis.StrictRedis(host='redis',port=PORT,db=0);r.ping();

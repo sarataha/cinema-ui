@@ -1,0 +1,163 @@
+* {
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #ddd;
+	background: linear-gradient(to bottom,#f7f7f7 0,#e7e7e7 30%,#eee 100%);
+}
+
+a {
+	text-decoration: none;
+}
+
+.content {
+	margin: 0 auto 0 auto;
+	width: 70%;
+}
+
+div#header {
+	background: linear-gradient(to right,#333 0,#656565 50%,#333 100%);
+	height: 80px;
+}
+
+div#header span {
+	font-size: xx-large;
+	font-weight: bold;
+	color: white;
+	padding-top: 20px;
+	display: block;
+	text-align: center;
+}
+
+span.heading {
+	text-align: center;
+	font-size: x-large;
+	font-weight: bold;
+	display: inline-block;
+	width: 100%;
+	padding-top: 20px;
+}
+
+
+div#menu  {
+	height: 30px;
+	background-color: black;
+	text-align: center;
+}
+
+div#menu a {
+	color: #ddd;
+	font-size: large;
+	font-weight: bold;
+	text-decoration: none;
+	vertical-align: middle;
+	display: inline-block;
+	padding: 4px 5px 0 5px;
+}
+
+div#menu a.selected {
+	color: white;
+}
+
+div.section {
+	width: 500px;
+	min-height: 200px;
+	margin: 30 auto;
+	background: white;
+}
+
+div.movie-section {
+	background: white url("reel.png") no-repeat 360px 55px;
+}
+
+div.showtime-section {
+	background: white url("clock.jpg") no-repeat 360px 55px;
+}
+
+div#showtimes {
+	height: 320px;
+}
+
+div#add-movie {
+	height: 220px;
+}
+
+div.user-section {
+	background: white url("user.png") no-repeat 360px 55px;
+}
+
+div.new-showtime-section {
+	text-align: center;
+}
+
+span.title {
+	background-color: #1ec7ff;
+	background: linear-gradient(to bottom,#1ec7ff 0,#00bcff 50%,#00b8ff 100%);
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	padding-left: 5px;
+	text-shadow: #555 1px 1px 1px;
+	color: #fff;
+	font-size: large;
+}
+
+span.section-content {
+	padding: 5px 0 0 5px;
+}
+
+span.rating {
+	position: relative;
+	top: 30;
+	left: 10px;
+	color: #1ec7ff;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+div.section span {
+	display: block;
+}
+
+div.section a:active,
+div.section a:hover,
+div.section a:visited,
+div.section a:link {
+	color: #1ec7ff;
+}
+
+a.list-link {
+	display: block;
+	margin: 5px;
+}
+
+a.nav-link {
+	position: relative;
+	top: 80px;
+	left: 5px;
+}
+
+table.input-form {
+	width: 400px;
+}
+
+table.input-form td {
+	vertical-align: top;
+}
+
+table.input-form td.or {
+	text-align: center;
+	font-weight: bold;
+	height: 40px;
+	vertical-align: middle;
+}
+
+table.input-form select {
+	width: 180px;
+}
+
+table.input-form input {
+	width: 180px;
+}

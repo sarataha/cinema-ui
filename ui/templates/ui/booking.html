@@ -1,0 +1,23 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'ui/style.css' %}" />
+
+<div id="header">
+  <span>Cinema on {{ hostname }}</span>
+</div>
+<div id="menu">
+  <a href="/movies">Movies</a>
+  <a href="/showtimes">Showtimes</a>
+  <a href="/admin">Admin</a>
+</div>
+
+<div class="content">
+  <span class="heading">Booking</span>
+  <div class="section">
+		<span class="title">{{ booking.showtime }}</span>
+    <span class="section-content">User: <a href="/user/{{ booking.user.id }}">{{ booking.user }}</a></span>
+    <span class="section-content">Movie: <a href="/movie/{{ booking.movie.id }}">{{ booking.movie.title }}</a></span>
+
+    <a class="nav-link" href="/">Return to movie listings</a>
+  </div>
+</div>
